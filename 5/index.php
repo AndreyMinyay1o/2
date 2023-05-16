@@ -91,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   // Если нет предыдущих ошибок ввода, есть кука сессии, начали сессию и
   // ранее в сессию записан факт успешного логина.
   if (!$error && !empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])) {
-    $user = 'u52927';
-    $pass = '5758562';
-    $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $user = 'u52968';
+    $pass = '8835740';
+    $db = new PDO('mysql:host=localhost;dbname=u52968', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     try{
       $get=$db->prepare("SELECT * FROM form WHERE id=?");
       $get->bindParam(1,$_SESSION['uid']);
@@ -269,8 +269,8 @@ else {
       setcookie('check_error', '', 100000);
     }
     
-	$user = 'u52927';
-	$pass = '5758562';	
+	$user = 'u52968';
+	$pass = '8835740';	
     $db = new PDO('mysql:host=localhost;dbname=u52927', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login']) and !$errors) {
       $id=$_SESSION['uid'];
