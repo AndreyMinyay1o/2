@@ -1,3 +1,4 @@
+</style>
 body{
     background-color: #1e002d;
     display: flex;
